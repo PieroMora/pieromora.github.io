@@ -12,16 +12,17 @@
 }
 
 /* MOBILE HEADER */
+
 @media (max-width: 768px) {
   .top-bar {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
     gap: 12px;
   }
 
   .nav {
-    display: flex;
-    gap: 16px;
+    justify-content: space-between;
+    width: 100%;
   }
 
   .nav a {
@@ -115,11 +116,11 @@ body {
   background: #ffffff;
   color: #000000;
   font-family: Arial, Helvetica, sans-serif;
-  padding-top: 80px; 
+  padding-top: 0px; 
 }
 
 .top-bar {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
